@@ -1,6 +1,6 @@
 @font-face {
     font-family: dana;
-    src: url(assets/font/dana-regular.woff2);
+    src: url(../fonts/dana-regular.woff2);
 }
 :root{
     --color--orange:#ff5722;
