@@ -112,3 +112,113 @@ a:hover{
         padding: 7px 40px;
     }
 }
+/* streetimage */
+.homepage__streetimage{
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+}
+.homepage__streetimage_content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 20px;
+    background-image: linear-gradient(51deg,rgba(23,26,60,.7) 5%,rgba(23,26,60,.3) 95%);
+}
+.streetimage_downloadapp{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.downloadapp_items{
+    margin-bottom: 3%;
+    border-radius: 10px;
+    border: 1px solid var(--color--background--header);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 24rem;
+}
+.homepage__streetimage_content h1,h3{
+    color: var(--color--border--bottom);
+    width: 35rem;
+    margin-left: 28%;
+    padding-right: 0;
+    margin-top: 1%;
+}
+.homepage__streetimage_content h3{
+    font-size: var(--large-fontsize);
+    margin-bottom: 4%;
+    font-weight: 300;
+}
+.homepage__streetimage_content h1{
+    font-size: var(--xlarge-fontsize);
+    margin-top: 5%;
+}
+.streetimage_downloadapp a{
+    display: inline-block;
+    padding: 15px;
+    font-size: var(--medium-fontsize);
+    color: var(--primary--textcolor);
+}
+.style_firstline{
+    background-color: var(--color--background--header);
+}
+.style_secondline a{
+    color: var(--color--background--header);
+}
+/* icon */
+.streetimage_icons{
+    margin-right: 5%;
+}
+@media screen and (max-width:767px){
+    .homepage__streetimage{
+        background-image: url(assets/image/banner-mobile.jpg);
+        background-repeat: no-repeat;
+        justify-content: center;
+    }
+    .homepage__streetimage_content{
+        margin: 50px 0;
+        padding:30px 18px;
+        width: 32rem;
+    }
+    .homepage__streetimage_content h3{
+        font-size: var(--medium-fontsize);
+        font-weight: 600;
+        padding-bottom: 8%;
+    }
+    .homepage__streetimage_content h1{
+        font-size: var(--large-fontsize);
+        font-weight: bold;
+    }
+}
+@media screen and (min-width:767px){
+    .homepage__streetimage{
+        height: 40rem;
+        background-image: url(assets/image/banner.jpg);
+        align-items: center;
+        padding-right: 8%;
+        position: relative;
+    }
+    .homepage__streetimage_content{
+        width: 52rem;
+        height: 30rem;
+    }
+    .streetimage_downloadapp{
+        justify-content: space-around;
+        margin-bottom: 11%;
+    }
+}
+@media screen and (min-width:1025px){
+    .homepage_mobileimage{
+        position: absolute;
+        left:10%;
+        top:20%;
+        background-image: url(assets/image/mockup-phone.png);
+        background-size: cover;
+        width: 40rem;
+        height: 50rem;
+    }
+}
